@@ -1,5 +1,14 @@
 /**
- * Created by 贺小雷 on 2017-07-17.
+ * progress.js
+ * used to draw progress with animation
+ *
+ * auth: hquestion
+ * date: 2017-07-18
+ * version: 1.0.0
+ *
+ * repository location: https://github.com/Hquestion/demos.git
+ *
+ * for more about the plugin, read README.md please.
  */
 (function(global, factory){
 	if(typeof require === 'function') {
