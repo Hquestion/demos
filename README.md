@@ -1,6 +1,8 @@
 造轮子和demo测试
 --------------------------------------------------------------------
 ## Progress.js canvas进度条插件说明
+![Alt text](demo-preview/progress.png)
+
 ### Getting Start
 1. 引入progress.js文件，支持AMD/CMD和全局变量引入
 > import Progress from 'path/to/progress.js'
@@ -16,7 +18,7 @@
 3. 绘制动画效果
 > progress.draw();
 ### API & Params
-#####Constructor
+#### Constructor
 - Node ：  native dom节点
 > 如：document.querySelectorAll(\'#canvans-container\')
 >> html结构如下：<br>
@@ -35,7 +37,7 @@
 > radius: 圆环半径，如：100
 
 > fontSize: 文本字体大小，如：30
-##### methods
+#### methods
 - init()
 > 初始化进度条背景及文字
 - draw()
