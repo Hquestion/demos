@@ -2,7 +2,7 @@
  * Created by 贺小雷 on 2017-07-17.
  */
 (function(global, factory){
-	if(typeof require === 'function' && require.amd) {
+	if(typeof require === 'function') {
 		define(factory);
 	}else if(typeof exports === 'object'){
 		modules.exports = factory();

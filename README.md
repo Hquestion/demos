@@ -1,7 +1,7 @@
 造轮子和demo测试
 --------------------------------------------------------------------
 ## Progress.js canvas进度条插件说明
-![Alt text](demo-preview/progress.png)
+![Alt 进度条静态预览图](demo-preview/progress.png)
 
 ### Getting Start
 1. 引入progress.js文件，支持AMD/CMD和全局变量引入
