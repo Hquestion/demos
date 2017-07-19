@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            list-style: none;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            padding: 5px;
+        }
+        li {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            border: 1px solid #f00;
+            position: relative;
+            text-align: center;
+            transition: all ease .2s;
+        }
+        li.is-dragging {
+            transition: none;
+        }
+        .handler {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #34a29f;
+            color: #fff;
+            cursor: move;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li draggable="true">
+                1
+                <div class="handler">三</div>
+            </li>
+            <li>
+                2
+                <div class="handler">三</div>
+            </li>
+            <li>
+                3
+                <div class="handler">三</div>
+            </li>
+            <li>
+                4
+                <div class="handler">三</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                5
+                <div class="handler">三</div>
+            </li>
+            <li>
+                6
+                <div class="handler">三</div>
+            </li>
+            <li>
+                7
+                <div class="handler">三</div>
+            </li>
+            <li>
+                8
+                <div class="handler">三</div>
+            </li>
+        </ul>
+    </div>
+<script src="../lib/jquery.js"></script>
+<script src="jquery.dragsort.js"></script>
+<script>
+    $('.container').dragsort();
+</script>
+</body>
+</html>
