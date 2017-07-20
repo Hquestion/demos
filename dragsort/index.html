@@ -21,6 +21,17 @@
         }
         li.is-dragging {
             transition: none;
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            background: #f1ffa1;
+        }
+        li.drag-ghost {
+            opacity: 0;
+            background: #74f2ff;
+        }
+        li.is-dragging .handler {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
         }
         .handler {
             position: absolute;
@@ -28,7 +39,7 @@
             top: 0;
             background: #34a29f;
             color: #fff;
-            cursor: move;
+            cursor: -webkit-grab;
             width: 30px;
             height: 30px;
             text-align: center;
@@ -40,37 +51,37 @@
 <body>
     <div class="container">
         <ul>
-            <li draggable="true">
+            <li class="item">
                 1
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li class="item">
                 2
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li  class="item">
                 3
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li class="item">
                 4
                 <div class="handler">三</div>
             </li>
         </ul>
         <ul>
-            <li>
+            <li class="item">
                 5
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li class="item">
                 6
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li class="item">
                 7
                 <div class="handler">三</div>
             </li>
-            <li>
+            <li class="item">
                 8
                 <div class="handler">三</div>
             </li>
