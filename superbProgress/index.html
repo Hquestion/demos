@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 240px;
+            height: 240px;
+            position: relative;
+        }
+        #bg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            margin: 0;
+            background: #fff;
+            transform: translate3d(-50%,-50%,0 );
+            z-index: 10;
+        }
+        .indicator {
+            position: absolute;
+            top: 60px;
+        }
+        .indicator.start {
+            left: -45px;
+        }
+        .indicator.end {
+            right: -55px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas width="240" height="240"></canvas>
+        <div class="indicator">
+            <p>总分</p>
+            <p class="total">500</p>
+            <p>满分：750</p>
+            <!--<div class="start indicator">0</div>-->
+            <!--<div class="end indicator">750</div>-->
+        </div>
+    </div>
+    <script src="./superbProgress.js"></script>
+<script>
+    var progress = new Progress(document.querySelector('.container'));
+    progress.init();
+
+//    var canvas = document.querySelector('canvas');
+//    var ctx = canvas.getContext('2d');
+//
+//    var bgImg = document.createElement('img');
+//
+//	bgImg.onload = function(){
+//		ctx.drawImage(bgImg, 0, 0, 240, 240);
+//		ctx.beginPath();
+//		ctx.arc(120,120, 100,-1*Math.PI, 0);
+//		ctx.strokeStyle = '#d4f1ec';
+//		ctx.lineWidth = 5;
+//		ctx.stroke();
+//		ctx.closePath();
+//
+//		ctx.beginPath();
+//		ctx.arc(120,120,100, -1*Math.PI, -0.4 * Math.PI);
+//		var gradient = ctx.createLinearGradient(0,0,0.6 * Math.PI * 100,0);
+//		gradient.addColorStop(0, "#4eb878");
+//		gradient.addColorStop(1,"#88f6b4");
+//		ctx.strokeStyle = gradient;
+//		ctx.lineWidth = 5;
+//		ctx.stroke();
+//		ctx.lineTo(120,120);
+//		ctx.lineWidth = 1;
+//		ctx.stroke();
+//		ctx.closePath();
+//    };
+//
+//	bgImg.setAttribute('src', '../img/progress-bg.png');
+</script>
+</body>
+</html>
