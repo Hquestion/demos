@@ -46,3 +46,9 @@
 > 清空画板，包括文本内容
 - rePaint()
 > 重新绘制进度条，修改进度条值，动态绘制可使用
+
+### 支持拖拽缩放的canvas绘制矩形
+#### Use
+`new TraistionCanvas(size, position, container)`
+
+demo: [https://hquestion.github.io/static/resize-canvas-rect/test.html](https://hquestion.github.io/static/resize-canvas-rect/test.html)
